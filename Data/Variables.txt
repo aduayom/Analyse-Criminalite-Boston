@@ -1,0 +1,15 @@
+Variables du dataset Boston Housing :
+- crim : Taux de criminalité par habitant
+- zn : Proportion de terrains résidentiels zonés pour des lots de plus de 25,000 pieds carrés
+- indus : Proportion d'acres commerciaux non résidentiels par ville
+- chas : Proximité de la rivière Charles (1 si le tronçon borde la rivière; 0 sinon)
+- nox : Concentration en oxydes nitriques (parties par 10 millions)
+- rm : Nombre moyen de chambres par logement
+- age : Proportion de logements occupés par leurs propriétaires construits avant 1940
+- dis : Distance moyenne vers cinq centres d'emploi de Boston
+- rad : Indice d'accessibilité aux autoroutes radiales
+- tax : Taux d'impôt foncier par tranche de 10,000 dollars
+- ptratio : Ratio élèves-professeurs par ville
+- b : 1000(Bk - 0.63)^2 où Bk est la proportion de Noirs par ville
+- lstat : Pourcentage de statut inférieur de la population
+- medv : Valeur médiane des maisons occupées par leurs propriétaires en milliers de dollars
