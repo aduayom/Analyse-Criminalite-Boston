@@ -52,6 +52,7 @@ proc print data=corr_matrix;
     var _NAME_ _TYPE_ crim;
 run;
 
+
 /*
 La variable `crim` (taux de criminalité) présente des corrélations positives avec `indus`, `nox`, `rad`, et `tax`,
 suggérant une possible influence des zones industrielles, de la pollution atmosphérique, de l'accessibilité aux autoroutes,
