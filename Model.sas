@@ -126,3 +126,15 @@ De meme que nox et age corrélation de 0.7
 tax et rad
 */
 
+/* Interprétation des VIF pour chaque variable :
+ * - indus : VIF = 3.74, faible multicolinéarité.
+ * - nox : VIF = 3.88, faible multicolinéarité.
+ * - age : VIF = 2.92, faible multicolinéarité.
+ * - dis : VIF = 3.48, faible multicolinéarité.
+ * - rad : VIF = 6.52, multicolinéarité modérée.
+ * - tax : VIF = 8.57, multicolinéarité modérée à élevée.
+ * - b : VIF = 1.32, faible multicolinéarité.
+ * - lstat : VIF = 3.19, faible multicolinéarité.
+ * - medv : VIF = 2.51, faible multicolinéarité.
+ */
+
