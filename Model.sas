@@ -3,7 +3,7 @@
 /* Définir le chemin vers le dossier data */
 %let path = /home/u59501961/sasuser.v94/Boston Housing study/Data;
 
-/*****************Importer le fichier CSV *****************/
+/***************** Importer le fichier CSV *****************/
 proc import datafile="&path./BostonHousing.csv"
     out=boston_data
     dbms=csv

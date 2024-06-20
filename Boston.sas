@@ -3,7 +3,7 @@
 /* Définir le chemin vers le dossier data */
 %let path = /home/u59501961/sasuser.v94/Boston Housing study/Data;
 
-/* Importer le fichier CSV */
+/***************** Importer le fichier CSV *****************/
 proc import datafile="&path./BostonHousing.csv"
     out=boston_data
     dbms=csv
@@ -14,6 +14,8 @@ run;
 /* Afficher les premières lignes du dataset pour vérifier l'importation */
 proc print data=boston_data (obs=10);
 run;
+
+
 
 /* 
 Le jeu de données sur le logement de Boston est une ressource classique et largement utilisée 
@@ -30,7 +32,7 @@ marchés immobiliers urbains.
 Vous trouverez plus de détail sur les différentes variables dans le fichier Variables.txt
 */
 
-/* Statistiques descriptives & Correlation */
+/***************** Statistiques descriptives & Correlation *****************/
 proc corr data=boston_data outp=corr_matrix;
     var crim zn indus chas nox rm age dis rad tax ptratio b lstat medv;
 run;
@@ -61,7 +63,7 @@ indiquant que les quartiers résidentiels, ceux près de la rivière Charles, av
 et une population diversifiée pourraient avoir moins de criminalité.
 */
 
-/* Analyse de la distribution */
+/***************** Analyse de la distribution */
 
 proc univariate data=boston_data;
     var crim indus nox age dis rad tax b lstat medv;
@@ -77,7 +79,7 @@ proc sgplot data=boston_data;
 run;
 
 
-/* Analyse Bivariée */
+/***************** Analyse Bivariée *****************/
 
 /* Graphique de dispersion pour crim et indus */
 proc sgplot data=boston_data;
